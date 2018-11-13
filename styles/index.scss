@@ -1,0 +1,41 @@
+@import './partials/vars';
+.card {
+    .card-content {
+        min-height: 150px;
+    }
+    // style default materializeCSS input
+    input[type="text"]:focus, input[type="number"]:focus {
+        border-bottom: 1px solid $main-color !important;
+    }
+}
+.mt {
+    margin-top: 20px;
+}
+#grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    text-align: center;
+    .card-content {
+        min-height: 10px !important;
+        padding: 5px 0px;
+    }
+    .item {
+        cursor: pointer;
+        margin: 15px;
+        border-radius: 5px;
+        &:first-child {
+            margin-top: 5px;
+        }
+    }
+    .empty {
+        min-height: 70px;
+    }
+}
+.invinsible {
+    display: none;
+}
+.hold {
+    background: $drag-color-card;
+}

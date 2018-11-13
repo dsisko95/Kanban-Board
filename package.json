@@ -1,0 +1,32 @@
+{
+  "name": "bojler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "parcel": "parcel -p 1234 index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build ./index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime-corejs2": "^7.1.2",
+    "autoprefixer": "^9.1.5",
+    "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.11",
+    "sass": "^1.14.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "cssnano": "^4.1.4",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "postcss-modules": "^1.4.1"
+  },
+  "description": ""
+}

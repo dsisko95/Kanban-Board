@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/js.00a46daa.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#" class="brand-logo center">Kanban Board</a>
+            <ul class="right ">
+                <li><a href="#" class="waves-effect waves-light btn blue darken-2" id="clear">Clear all tasks</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col l8 m8 s12">
+                <div class="card mt">
+                    <div class="card-content black-text">
+                        <span class="card-title">New task</span>
+                        <div class="input-field col s12">
+                            <input placeholder="Add a task" id="task" type="text">
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <button class="btn waves-effect waves-light blue" name="action" id="add-btn">Add
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m4 s12">
+                <div class="card mt">
+                    <div class="card-content black-text">
+                        <span class="card-title">Active task limiter</span>
+                        <div class="input-field col s12">
+                            <input placeholder="Add a number" id="number" type="number">
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <button class="btn waves-effect waves-light blue left" name="action" id="set-btn">Set
+                            <i class="material-icons right">settings</i>
+                        </button>
+                        <div class="chip right" id="chip">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12 m12 s12">
+                <div class="card">
+                    <div class="card-content black-text" id="grid-wrapper">
+                        <div id="to-do" class="z-depth-1">
+                            <h5>To do</h5>
+                            <div id="to-do-wrapper" class="empty">
+                            </div>
+                        </div>
+                        <div class="z-depth-1">
+                            <h5>Doing <span id="info"></span></h5>
+                            <div id="doing-wrapper" class="empty">
+                            </div>
+                        </div>
+                        <div class="z-depth-1">
+                            <h5>Done</h5>
+                            <div id="done-wrapper" class="empty">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
